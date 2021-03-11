@@ -18,13 +18,53 @@ class _DasboardPageState extends State<DasboardPage> {
           elevation: 0,
           backgroundColor: Colors.white,
           bottom: PreferredSize(
-            preferredSize: Size(200, 20),
-            child: Card(
-              child: Container(
-                height: 60,
-                alignment: Alignment.center,
-                color: Colors.black38,
-                child: Text("ss"),
+            preferredSize: Size(
+              0,
+              50,
+            ),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 14, right: 14),
+              child: Card(
+                color: Colors.amber,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                child: Container(
+                  alignment: Alignment.topCenter,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 10,
+                        child: TextFormField(
+                          style: TextStyle(fontSize: 18),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            contentPadding: const EdgeInsets.only(top: 13),
+                            prefixIcon: Icon(
+                              Icons.menu,
+                              size: 25,
+                            ),
+                            hintText: 'Telusuri dalam email',
+                            hintStyle: TextStyle(
+                              fontSize: 18,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          child: Center(
+                            child: CircleAvatar(
+                              child: Text("Da"),
+                            ),
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
