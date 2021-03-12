@@ -1,4 +1,4 @@
-import 'package:UI_Scanner/thame/IconsComponent.dart';
+import 'package:UI_Scanner/component/CustomElevation.dart';
 import 'package:flutter/material.dart';
 
 class DasboardPage extends StatefulWidget {
@@ -25,7 +25,6 @@ class _DasboardPageState extends State<DasboardPage> {
             child: Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Card(
-                color: Colors.amber,
                 elevation: 10,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
@@ -83,6 +82,15 @@ class _DasboardPageState extends State<DasboardPage> {
                 child: Center(child: Text('Entry ${entries[index]}')),
               );
             }),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.white60,
+          elevation: 8,
+          onPressed: () {},
+          child: Icon(
+            Icons.maps_ugc_outlined,
+            color: Colors.red,
+          ),
+        ),
       ),
     );
   }
