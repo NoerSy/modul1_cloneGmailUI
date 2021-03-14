@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2eb1264d-f2fa-45b3-aec8-e7e52bdd2ad7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/GoogleSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/GoogleSans-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/GoogleSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/view/widget/header.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/view/widget/mails.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/view/widget/primary_mail.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/view/DashboardPage/Test.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UI_Scanner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/thame/PaletteColor.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/thame/PaletteColor.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/DashboardPage/DashboardPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/DashboardPage/DashboardPage.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -39,6 +32,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_4_XL_API_28]" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -95,26 +95,26 @@
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state x="486" y="279" key="FileChooserDialogImpl/0.0.1842.1080@0.0.1842.1080" timestamp="1615545516613" />
-    <state width="1353" height="294" key="GridCell.Tab.0.bottom" timestamp="1615653674916">
+    <state width="1315" height="306" key="GridCell.Tab.0.bottom" timestamp="1615748123833">
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1315" height="294" key="GridCell.Tab.0.bottom/0.0.1842.1080/1920.0.1858.1080@1920.0.1858.1080" timestamp="1615645600012" />
-    <state width="1353" height="294" key="GridCell.Tab.0.bottom/0.0.1842.1080@0.0.1842.1080" timestamp="1615653674916" />
-    <state width="1353" height="294" key="GridCell.Tab.0.center" timestamp="1615653674915">
+    <state width="1315" height="306" key="GridCell.Tab.0.bottom/0.0.1842.1080@0.0.1842.1080" timestamp="1615748123833" />
+    <state width="1315" height="306" key="GridCell.Tab.0.center" timestamp="1615748123833">
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1315" height="294" key="GridCell.Tab.0.center/0.0.1842.1080/1920.0.1858.1080@1920.0.1858.1080" timestamp="1615645600012" />
-    <state width="1353" height="294" key="GridCell.Tab.0.center/0.0.1842.1080@0.0.1842.1080" timestamp="1615653674915" />
-    <state width="1353" height="294" key="GridCell.Tab.0.left" timestamp="1615653674915">
+    <state width="1315" height="306" key="GridCell.Tab.0.center/0.0.1842.1080@0.0.1842.1080" timestamp="1615748123833" />
+    <state width="1315" height="306" key="GridCell.Tab.0.left" timestamp="1615748123833">
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1315" height="294" key="GridCell.Tab.0.left/0.0.1842.1080/1920.0.1858.1080@1920.0.1858.1080" timestamp="1615645600011" />
-    <state width="1353" height="294" key="GridCell.Tab.0.left/0.0.1842.1080@0.0.1842.1080" timestamp="1615653674915" />
-    <state width="1353" height="294" key="GridCell.Tab.0.right" timestamp="1615653674916">
+    <state width="1315" height="306" key="GridCell.Tab.0.left/0.0.1842.1080@0.0.1842.1080" timestamp="1615748123833" />
+    <state width="1315" height="306" key="GridCell.Tab.0.right" timestamp="1615748123833">
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1315" height="294" key="GridCell.Tab.0.right/0.0.1842.1080/1920.0.1858.1080@1920.0.1858.1080" timestamp="1615645600012" />
-    <state width="1353" height="294" key="GridCell.Tab.0.right/0.0.1842.1080@0.0.1842.1080" timestamp="1615653674915" />
+    <state width="1315" height="306" key="GridCell.Tab.0.right/0.0.1842.1080@0.0.1842.1080" timestamp="1615748123833" />
     <state x="207" y="169" key="SettingsEditor" timestamp="1615541453408">
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
@@ -123,9 +123,10 @@
       <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state x="517" y="441" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1842.1080@0.0.1842.1080" timestamp="1615654857905" />
-    <state x="2256" y="254" key="run.anything.popup" timestamp="1615647872742">
-      <screen x="1920" y="0" width="1858" height="1080" />
+    <state x="333" y="254" key="run.anything.popup" timestamp="1615749364613">
+      <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state x="2256" y="254" key="run.anything.popup/0.0.1842.1080/1920.0.1858.1080@1920.0.1858.1080" timestamp="1615647872742" />
+    <state x="333" y="254" key="run.anything.popup/0.0.1842.1080@0.0.1842.1080" timestamp="1615749364613" />
   </component>
 </project>

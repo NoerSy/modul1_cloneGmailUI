@@ -1,3 +1,4 @@
+
 import 'package:UI_Scanner/thame/PaletteColor.dart';
 import 'package:UI_Scanner/thame/TypographyStyle.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Modul 1',
-      home: Jadwal(),
+      home: DasboardPage(),
     );
   }
 }
@@ -33,11 +34,6 @@ class _JadwalState extends State<Jadwal> {
     'Kamis',
     'Jumat',
     'Sabtu'
-  ];
-
-  final List<String> kelas = <String>[
-    'Pemrograman Fungsional F',
-    'Pemrograman Dasar F',
   ];
 
   @override
@@ -89,11 +85,9 @@ class _JadwalState extends State<Jadwal> {
                     children: [
                       ListTile(
                         contentPadding: const EdgeInsets.all(12),
-                        title: Text(
-                          "Pemrograman Fungsional F",
+                        title: Text("Pemrograman Fungsional F",
                           style: TypographyStyle.caption2
-                              .merge(TextStyle(fontSize: 18)),
-                        ),
+                              .merge(TextStyle(fontSize: 18)),),
                         subtitle: Container(
                           padding: const EdgeInsets.all(12),
                           child: Row(
@@ -122,13 +116,17 @@ class _JadwalState extends State<Jadwal> {
                           ),
                         ),
                       ),
+                      Divider(
+                        height: 2,
+                        indent: 4,
+                        endIndent: 4,
+                        color: PaletteColor.grey60,
+                      ),
                       ListTile(
                         contentPadding: const EdgeInsets.all(12),
-                        title: Text(
-                          "Pemrograman Dasar F",
+                        title: Text("Pemrograman Dasar F",
                           style: TypographyStyle.caption2
-                              .merge(TextStyle(fontSize: 18)),
-                        ),
+                              .merge(TextStyle(fontSize: 18)),),
                         subtitle: Container(
                           padding: const EdgeInsets.all(12),
                           child: Row(

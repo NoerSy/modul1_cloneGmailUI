@@ -1,9 +1,5 @@
-
-
 import 'package:UI_Scanner/thame/PaletteColor.dart';
 import 'package:UI_Scanner/thame/TypographyStyle.dart';
-import 'package:UI_Scanner/view/widget/mails.dart';
-import 'package:UI_Scanner/view/widget/primary_mail.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,29 +9,39 @@ class DasboardPage extends StatefulWidget {
 }
 
 class _DasboardPageState extends State<DasboardPage> {
-
   @override
   Widget build(BuildContext context) {
-    GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
     return SafeArea(
       child: Scaffold(
-        key: _drawerKey,
+        floatingActionButton: Container(
+          height: 70.0,
+          width: 70.0,
+          child: FittedBox(
+            child: FloatingActionButton(
+              child: Icon(
+                Icons.add,
+                color: Colors.black54,
+                size: 30,
+              ),
+              backgroundColor: PaletteColor.primarybg2,
+              onPressed: () {},
+            ),
+          ),
+        ),
         body: CustomScrollView(
           slivers: [
+            SliverPadding(padding: EdgeInsets.all(4)),
             SliverPadding(
-              padding: EdgeInsets.all(12),
+              padding: EdgeInsets.only(left: 12, right: 12, bottom: 12),
               sliver: SliverAppBar(
                 pinned: false,
                 snap: true,
                 floating: true,
-                elevation: 2,
-                backgroundColor: PaletteColor.primarybg,
-                iconTheme: IconThemeData(
-                  color: PaletteColor.text
-                ),
+                elevation: 5,
+                backgroundColor: Colors.white,
+                iconTheme: IconThemeData(color: PaletteColor.text),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(12))),
-                primary: false,
+                    borderRadius: BorderRadius.all(Radius.circular(8))),
                 title: TextFormField(
                   style: TextStyle(fontSize: 18),
                   decoration: InputDecoration(
@@ -61,28 +67,29 @@ class _DasboardPageState extends State<DasboardPage> {
             const SliverToBoxAdapter(
               child: Padding(
                 padding: EdgeInsets.only(top: 12, left: 24, bottom: 12),
-                child: Text("KOTAK MASUK",
-                style: TypographyStyle.subtitle2,
+                child: Text(
+                  "KOTAK MASUK",
+                  style: TypographyStyle.subtitle2,
                 ),
               ),
             ),
             SliverList(
               delegate: SliverChildBuilderDelegate((context, index) {
                 return Container(
-                  margin: EdgeInsets.only(top: 12, left: 24),
+                  margin: EdgeInsets.only(top: 12, left: 16),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(bottom: 10),
+                        margin: EdgeInsets.only(bottom: 12),
                         alignment: Alignment.topCenter,
-                        width: 40,
+                        width: 50,
                         child: ClipOval(
                           child: Container(
                             alignment: Alignment.center,
-                            width: 40,
-                            height: 40,
+                            width: 50,
+                            height: 50,
                             child: Text(
                               "G",
                               style: TypographyStyle.title.merge(
@@ -105,8 +112,11 @@ class _DasboardPageState extends State<DasboardPage> {
                               "GitHub",
                               style: TextStyle(fontSize: 16),
                             ),
-                            Text("data"),
-                            Text("data"),
+                            Text(
+                              "Menerapkan Container, Row, Column, ListView Builder, Orientasi Portrait dan Landscape tidak bermasalah",
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 2,
+                            ),
                           ],
                         ),
                       ),
@@ -132,14 +142,104 @@ class _DasboardPageState extends State<DasboardPage> {
           child: ListView(
             padding: EdgeInsets.zero,
             children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(left: 20, top: 4),
+                alignment: Alignment.centerLeft,
+                height: 50,
+                child: Text(
+                  "Gmail",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              Divider(),
               ListTile(
-                title: Text('Item 1'),
+                leading: Icon(Icons.inbox),
+                title: Text('Semua Kotak Masuk'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              Divider(),
+              ListTile(
+                leading: Icon(Icons.inbox),
+                title: Text('Kotak Masuk'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 18, top: 12, bottom: 4),
+                child: Text(
+                  "SEMUA LEBEL",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              ListTile(
+                leading: Icon(Icons.star_border_outlined),
+                title: Text('Berbintang'),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                title: Text('Item 2'),
+                leading: Icon(Icons.access_time_rounded),
+                title: Text('Ditunda'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.label_important_outline),
+                title: Text('Penting'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.send_sharp),
+                title: Text('Terkirim'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.schedule_send),
+                title: Text('Terjadwal'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.exit_to_app_sharp),
+                title: Text('Kotak Keluar'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.insert_drive_file_outlined),
+                title: Text('Darf'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.email_outlined),
+                title: Text('Semua Email'),
+                onTap: () {
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.info_outline),
+                title: Text('Spam'),
                 onTap: () {
                   Navigator.pop(context);
                 },
