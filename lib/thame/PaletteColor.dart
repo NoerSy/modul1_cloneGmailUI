@@ -4,10 +4,10 @@ class PaletteColor {
   static const Color black = Colors.black;
 
   /* Primary Color */
-  static const Color primary = Color(0xFF189BFA);
-  static const Color primary80 = Color(0xFF4DB5FF);
-  static const Color primary60 = Color(0xFF86CFFF);
-  static const Color primary40 = Color(0xFFC2E8FF);
+  static const Color primary = Color(0xFFFF5B16);
+  static const Color primary80 = Color(0xFFFF704B);
+  static const Color primary60 = Color(0xFFFF9796);
+  static const Color primary40 = Color(0xFFFFE0E0);
 
   /* Primary Background */
   static const Color primarybg = Color(0xFFFFFFFF);
