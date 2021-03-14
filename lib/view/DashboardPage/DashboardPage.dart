@@ -75,63 +75,71 @@ class _DasboardPageState extends State<DasboardPage> {
             ),
             SliverList(
               delegate: SliverChildBuilderDelegate((context, index) {
-                return Container(
-                  margin: EdgeInsets.only(top: 12, left: 16),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(bottom: 12),
-                        alignment: Alignment.topCenter,
-                        width: 50,
-                        child: ClipOval(
-                          child: Container(
-                            alignment: Alignment.center,
-                            width: 50,
-                            height: 50,
-                            child: Text(
-                              "G",
-                              style: TypographyStyle.title.merge(
-                                TextStyle(color: PaletteColor.primarybg),
+                return InkWell(
+                  onTap: () => {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(30),
+                      ),
+                    ),
+                    margin: EdgeInsets.only(top: 12, left: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(bottom: 12),
+                          alignment: Alignment.topCenter,
+                          width: 50,
+                          child: ClipOval(
+                            child: Container(
+                              alignment: Alignment.center,
+                              width: 50,
+                              height: 50,
+                              child: Text(
+                                "G",
+                                style: TypographyStyle.title.merge(
+                                  TextStyle(color: PaletteColor.primarybg),
+                                ),
                               ),
+                              color: Colors.blue,
                             ),
-                            color: Colors.blue,
                           ),
                         ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.only(left: 12),
-                        width: MediaQuery.of(context).size.width - 120,
-                        alignment: Alignment.centerLeft,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "GitHub",
-                              style: TextStyle(fontSize: 16),
-                            ),
-                            Text(
-                              "Menerapkan Container, Row, Column, ListView Builder, Orientasi Portrait dan Landscape tidak bermasalah",
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 2,
-                            ),
-                          ],
+                        Container(
+                          padding: EdgeInsets.only(left: 12),
+                          width: MediaQuery.of(context).size.width - 120,
+                          alignment: Alignment.centerLeft,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "GitHub",
+                                style: TextStyle(fontSize: 16),
+                              ),
+                              Text(
+                                "Menerapkan Container, Row, Column, ListView Builder, Orientasi Portrait dan Landscape tidak bermasalah",
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 2,
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text("9 Mar"),
-                            SizedBox(height: 12),
-                            Icon(Icons.star_outline),
-                          ],
-                        ),
-                      )
-                    ],
+                        Container(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("9 Mar"),
+                              SizedBox(height: 12),
+                              Icon(Icons.star_outline),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 );
               }, childCount: 20),
