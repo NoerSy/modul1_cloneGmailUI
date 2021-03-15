@@ -3,12 +3,12 @@ import 'package:UI_Scanner/thame/TypographyStyle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class DasboardPage extends StatefulWidget {
+class GmailPage extends StatefulWidget {
   @override
-  _DasboardPageState createState() => _DasboardPageState();
+  _GmailPage createState() => _GmailPage();
 }
 
-class _DasboardPageState extends State<DasboardPage> {
+class _GmailPage extends State<GmailPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

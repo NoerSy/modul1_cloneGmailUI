@@ -18,9 +18,15 @@ class _ScadulePageState extends State<ScadulePage> {
     'Sabtu'
   ];
 
+  final List<String> kelas = <String>[
+    'Pemrograman Fungsional F',
+    'Pemrograman Dasar F'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: PaletteColor.primarybg2,
       appBar: AppBar(
         backgroundColor: PaletteColor.primary,
         title: Text("Jadwal Praktikum"),
@@ -71,12 +77,6 @@ class _ScadulePageState extends State<ScadulePage> {
                         lab: "Lab A",
                         pc: "A25",
                       ),
-                      Divider(
-                        height: 2,
-                        indent: 4,
-                        endIndent: 4,
-                        color: PaletteColor.grey60,
-                      ),
                       ClassPractice(
                         kelas: "Pemrograman Dasar F",
                         jam: "00:00 - 00:00",
@@ -85,6 +85,22 @@ class _ScadulePageState extends State<ScadulePage> {
                       ),
                     ],
                   ),
+
+                  /*ListView.builder(
+                    physics: NeverScrollableScrollPhysics(),
+                    itemCount: kelas.length,
+                    shrinkWrap: true,
+                    itemBuilder: (BuildContext context, int index) {
+                      return ClassPractice(
+                        kelas: kelas[index],
+                        jam: "00:00 - 00:00",
+                        lab: "Lab A",
+                        pc: "A25",
+                      );
+                    },
+                  ),*/
+
+
                 )
               ],
             ),
