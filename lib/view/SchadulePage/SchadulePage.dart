@@ -77,6 +77,12 @@ class _ScadulePageState extends State<ScadulePage> {
                         lab: "Lab A",
                         pc: "A25",
                       ),
+                      Divider(
+                        height: 2,
+                        indent: 4,
+                        endIndent: 4,
+                        color: PaletteColor.grey60,
+                      ),
                       ClassPractice(
                         kelas: "Pemrograman Dasar F",
                         jam: "00:00 - 00:00",
@@ -99,8 +105,6 @@ class _ScadulePageState extends State<ScadulePage> {
                       );
                     },
                   ),*/
-
-
                 )
               ],
             ),

@@ -1,5 +1,3 @@
-
-
 import 'package:UI_Scanner/thame/PaletteColor.dart';
 import 'package:UI_Scanner/thame/TypographyStyle.dart';
 import 'package:flutter/material.dart';
@@ -13,17 +11,12 @@ class ClassPractice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Divider(
-          height: 2,
-          indent: 4,
-          endIndent: 4,
-          color: PaletteColor.grey60,
-        ),
         ListTile(
           contentPadding: const EdgeInsets.all(12),
-          title: Text(kelas,
-            style: TypographyStyle.caption2
-                .merge(TextStyle(fontSize: 18)),),
+          title: Text(
+            kelas,
+            style: TypographyStyle.caption2.merge(TextStyle(fontSize: 18)),
+          ),
           subtitle: Container(
             padding: const EdgeInsets.all(12),
             child: Row(
@@ -33,21 +26,36 @@ class ClassPractice extends StatelessWidget {
                   color: PaletteColor.primary,
                 ),
                 SizedBox(width: 4),
-                Text(jam, style: TypographyStyle.subtitle2.merge(TextStyle(color: PaletteColor.grey60),),),
+                Text(
+                  jam,
+                  style: TypographyStyle.subtitle2.merge(
+                    TextStyle(color: PaletteColor.grey60),
+                  ),
+                ),
                 SizedBox(width: 14),
                 Icon(
                   Icons.meeting_room,
                   color: PaletteColor.primary,
                 ),
                 SizedBox(width: 4),
-                Text(lab, style: TypographyStyle.subtitle2.merge(TextStyle(color: PaletteColor.grey60),),),
+                Text(
+                  lab,
+                  style: TypographyStyle.subtitle2.merge(
+                    TextStyle(color: PaletteColor.grey60),
+                  ),
+                ),
                 SizedBox(width: 14),
                 Icon(
                   Icons.computer,
                   color: PaletteColor.primary,
                 ),
                 SizedBox(width: 4),
-                Text(pc, style: TypographyStyle.subtitle2.merge(TextStyle(color: PaletteColor.grey60),),),
+                Text(
+                  pc,
+                  style: TypographyStyle.subtitle2.merge(
+                    TextStyle(color: PaletteColor.grey60),
+                  ),
+                ),
               ],
             ),
           ),
@@ -56,4 +64,3 @@ class ClassPractice extends StatelessWidget {
     );
   }
 }
-

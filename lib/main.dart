@@ -1,4 +1,3 @@
-
 import 'package:UI_Scanner/view/GmailPage/GmailPage.dart';
 import 'package:UI_Scanner/view/SchadulePage/SchadulePage.dart';
 import 'package:flutter/material.dart';
