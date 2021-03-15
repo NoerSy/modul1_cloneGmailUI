@@ -1,5 +1,5 @@
-import 'package:UI_Scanner/thame/PaletteColor.dart';
-import 'package:UI_Scanner/thame/TypographyStyle.dart';
+import 'package:gmail_clone/thame/PaletteColor.dart';
+import 'package:gmail_clone/thame/TypographyStyle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

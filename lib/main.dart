@@ -1,6 +1,6 @@
-import 'package:UI_Scanner/view/GmailPage/GmailPage.dart';
-import 'package:UI_Scanner/view/SchadulePage/SchadulePage.dart';
 import 'package:flutter/material.dart';
+
+import 'view/SchadulePage/SchadulePage.dart';
 
 void main() {
   runApp(MyApp());
